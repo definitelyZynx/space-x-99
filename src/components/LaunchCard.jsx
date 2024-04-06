@@ -4,7 +4,7 @@ import React from 'react';
 // eslint-disable-next-line react/display-name
 export const LaunchCard = React.forwardRef(({ image, title, details }, ref) => {
   return (
-    <div className="flex flex-row gap-5 h-32 w-full" ref={ref}>
+    <div className="flex flex-col md:flex-row gap-2 md:gap-5 md:h-32 w-full" ref={ref}>
       <div className="aspect-square w-32 rounded-[4px]">
         <img
           className="h-full w-full object-cover rounded-[4px]"

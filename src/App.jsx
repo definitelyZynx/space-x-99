@@ -60,7 +60,7 @@ function App() {
   }, [hasNextPage, !isLoading]);
 
   return (
-    <div className="px-52 py-8 w-full min-h-full bg-slate-100">
+    <div className="px-2 md:px-52 py-8 w-full min-h-full bg-slate-100">
       <div className="w-full min-h-full p-5">
         <input
           className="w-full border border-slate-300 py-2 px-3 outline-none rounded-[4px]"
@@ -70,7 +70,7 @@ function App() {
         />
 
         <div className="w-full border border-slate-300 rounded-[4px] bg-white mt-6 p-8">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-9 md:gap-6">
             {filteredData.map((data, index, datas) => {
               const launchTitle = data.flight_number + ": " + data.name;
               return (
